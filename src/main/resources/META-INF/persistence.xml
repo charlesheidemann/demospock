@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+	<persistence-unit name="app-persistence-unit"
+		transaction-type="JTA">
+		<description>Persistence Unit</description>
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<jta-data-source>jdbc/demo</jta-data-source>
+		<class>br.org.testing.spock.api.domain.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+		<validation-mode>AUTO</validation-mode>
+		<properties>
+			<property name="eclipselink.target-database" value="org.eclipse.persistence.platform.database.oracle.Oracle10Platform" />
+			<property name="eclipselink.target-server" value="WebLogic" />
+			<property name="eclipselink.logging.logger" value="DefaultLogger" />
+			<property name="eclipselink.logging.level" value="FINE" />
+			<property name="eclipselink.logging.level.sql" value="FINE" />
+			<property name="eclipselink.logging.parameters" value="true" />
+			<property name="eclipselink.logging.timestamp" value="false" />
+	</persistence-unit>
+</persistence>
