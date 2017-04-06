@@ -1,7 +1,6 @@
 package br.org.testing.spock.impl.service;
 
 import br.org.testing.spock.api.domain.Person;
-import br.org.testing.spock.api.domain.SocialServiceUsageRecord;
 import br.org.testing.spock.api.repository.PersonRepository;
 import br.org.testing.spock.api.repository.SocialServiceUsageRecordRepository;
 import br.org.testing.spock.api.service.PersonService;
@@ -11,7 +10,6 @@ import br.org.testing.spock.api.service.social.SocialSecurityNumberVerification;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.validation.Valid;
-import java.security.Principal;
 
 /**
  * Created by c.heidemann on 05/04/2017.
