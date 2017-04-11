@@ -12,7 +12,7 @@ public class SocialSecurityNumberVerificationException extends RuntimeException 
         super(String.format(error.message(), socialNumber));
     }
 
-    enum VIOLATION {
+    public enum VIOLATION {
 
         INVALID("This is an INVALID Social Security Number: %s"),
 

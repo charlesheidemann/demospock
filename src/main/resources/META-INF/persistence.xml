@@ -9,6 +9,7 @@
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<jta-data-source>jdbc/demo</jta-data-source>
 		<class>br.org.testing.spock.api.domain.Person</class>
+        <class>br.org.testing.spock.api.domain.SocialServiceUsageRecord</class>
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
 		<validation-mode>AUTO</validation-mode>
