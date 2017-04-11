@@ -18,6 +18,11 @@ import java.sql.SQLException
 
 /**
  * Created by c.heidemann on 05/04/2017.
+ *
+ * This is a implementation using Spock Framework
+ * It is specification language and easier for having dependencies and instantiate pojos
+ * Having the same idea for test methods as traditional implementation with Mockito
+ * @see PersonServiceImplJUnitTest
  */
 class PersonServiceImplTest extends Specification {
 
